@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif
+}
+
+nav{
+  position: fixed;
+  top:15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  /* border-bottom: 1px solid white; */
+}
+.brand{
+  margin-left: 5%;
+  font-size: 1.2rem;
+  font-family: 'Megrim', cursive;
+  font-weight: 700;
+}
+.brand > span{
+  font-family: 'Rubik Glitch', cursive;
+  border-radius: 50%;
+  background-color: aliceblue;
+  color: orange;
+  font-weight: 100;
+}
+nav .navList{
+  list-style-type: none;
+  margin-left: 10%;
+}
+nav .navItem{
+  display: inline-block;
+  margin: auto 30px;
+  color: white;
+}
+.navLink{
+  color: white;
+  text-decoration: none;
+  
+}
+.selected{
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  
+}
+.signIcon{
+  margin-left: auto;
+  margin-right: 5%;
+  border: 1px solid beige;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: .9rem;
+  width: 80px;
+  text-align: center;
+  
+}
+
+/* NavBarEnd */
+
+#heroSec{
+  height: 90vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ),url(../images/discover.jpg) center/cover no-repeat;
+}
+.heroCon{
+  /* border: solid; */
+  margin: auto;
+  width: 50%;
+  padding-top: 13%;
+  padding-left: 3%;
+  text-align: center;
+
+}
+.heroCon > h1{
+  font-size: 3rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+
+.heroCon > p{
+  width: 65%;
+  margin: auto;
+  color: white;
+
+}

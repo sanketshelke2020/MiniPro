@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.loginCon{
+  
+  
+
+}
+
+.logForm{
+  background-color: #fff;
+  height: 60vh;
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgb(202, 202, 202);
+  
+
+}
+.logForm>label{
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+}
+#username,#password,#submit{
+  margin: 20px;
+  width: 300px;
+  height: 20px;
+  border-radius: 30px;
+  padding: 15px;
+  border: 2px solid orange;
+}
+#submit{
+  height: 50px;
+background: linear-gradient(to right, #f7b733, #fc4a1a);
+font-weight: 500;
+font-size: 1.1rem;
+line-height: 50px;
+padding: 0;
+border: 1px solid orange;
+color: white;
+}
