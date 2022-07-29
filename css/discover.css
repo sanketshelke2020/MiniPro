@@ -3,14 +3,43 @@ body{
   padding: 0;
   font-family: 'Roboto', sans-serif
 }
+.headingSec{
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: -70px;
+  margin-bottom: 50px;
+}
+
+
+
+/* NavBar */
+
+/* navchanger */
+
+.scrollNav{
+  background-color: white;
+  color:white;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.bl{
+  color: black!important ;
+}
+
+
+
 
 nav{
+  z-index: 20;
   position: fixed;
   top:15px;
   display: flex;
   align-items: center;
   width: 100%;
   margin: auto;
+  justify-content: space-around;
   /* border-bottom: 1px solid white; */
 }
 .brand{
@@ -33,7 +62,7 @@ nav .navList{
 nav .navItem{
   display: inline-block;
   margin: auto 30px;
-  color: white;
+  /* color: white; */
 }
 .navLink{
   color: white;
@@ -45,31 +74,37 @@ nav .navItem{
   border-bottom: 2px solid white;
   
 }
-.signIcon{
-  margin-left: auto;
-  margin-right: 5%;
-  border: 1px solid beige;
-  padding: 6px;
-  border-radius: 20px;
-  font-size: .9rem;
-  width: 80px;
-  text-align: center;
-  
+.navBtn{
+  margin-left: 50px;
+ display: flex;
+ 
+ 
 }
+.navBtn>li{
+  list-style-type: none;
+  justify-self: flex-end;
+}
+.navBtn>li>a{
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
 
 /* NavBarEnd */
 
 #heroSec{
   height: 90vh;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ),url(../images/discover.jpg) center/cover no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7) ),url(../images/dic.jpg) center/cover no-repeat;
 }
 .heroCon{
   /* border: solid; */
-  margin: auto;
+  /* margin: auto; */
   width: 50%;
   padding-top: 13%;
-  padding-left: 3%;
-  text-align: center;
+  padding-left: 10%;
+  /* text-align: center; */
 
 }
 .heroCon > h1{
@@ -77,12 +112,88 @@ nav .navItem{
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  letter-spacing: .1rem;
+  margin-bottom: 10px;
 }
 
 .heroCon > p{
-  width: 65%;
-  margin: auto;
+  /* width: 65%; */
+  /* margin: auto; */
   color: white;
+  margin-bottom: 30px;
+}
+.heroCon>a{
+  /* margin-top: 100px; */
+  text-decoration: none;
+  border-radius: 20px;
+  width: 130px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
 
+.disCon{
+  margin: 10% ;
+  display: flex;
+  flex-direction: column;
+}
+.disRow{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+
+
+
+/* card */
+
+.card{
+  height: 400px;
+  width: 250px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+}
+.cardImg{
+  height: 60%;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  
+}
+.cardImg>img{
+  width: 100%;
+  height: 100%;
+
+  
+}
+.cardDes > h3{
+  color: rgb(90, 90, 90);
+
+  
+}
+.cardDes>p{
+  color: gray;
+}
+
+.cardDes>h4{
+  text-align: right;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  color: rgb(97, 93, 93);
+}
+
+
+/* footer */
+
+footer{
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

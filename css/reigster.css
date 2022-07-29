@@ -2,6 +2,86 @@ body{
   background: linear-gradient(to right,  #fc4a1a,#f7b733);
   height: 100vh;
 }
+
+/* NavBar */
+
+/* navchanger */
+
+.scrollNav{
+  background-color: white;
+  color:white;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.bl{
+  color: black!important ;
+}
+
+
+
+
+nav{
+  position: fixed;
+  top:15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  /* border-bottom: 1px solid white; */
+}
+.brand{
+  margin-left: 5%;
+  font-size: 1.2rem;
+  font-family: 'Megrim', cursive;
+  font-weight: 700;
+}
+.brand > span{
+  font-family: 'Rubik Glitch', cursive;
+  border-radius: 50%;
+  background-color: aliceblue;
+  color: orange;
+  font-weight: 100;
+}
+nav .navList{
+  list-style-type: none;
+  margin-left: 10%;
+}
+nav .navItem{
+  display: inline-block;
+  margin: auto 30px;
+  /* color: white; */
+}
+.navLink{
+  color: white;
+  text-decoration: none;
+  
+}
+.selected{
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+  
+}
+.navBtn{
+  margin-left: 50px;
+ display: flex;
+ 
+ 
+}
+.navBtn>li{
+  list-style-type: none;
+  justify-self: flex-end;
+}
+.navBtn>li>a{
+  border: 1px solid grey;
+  padding: 8px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+
+/* NavBarEnd */
+
 .mainCon{
   position: absolute;
   top: 50%;
@@ -16,15 +96,31 @@ body{
 .leftCon{
   width: 50%  ;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  text-align: center;
   
 }
-.leftCon>p{
+.leftCon>h2{
+  
   font-size: 2rem;
   color: white;
   font-weight: 700;
+  margin: 10px;
+}
+.leftCon>p{
+  width: 300px;
+  color: white;
+
+}
+.leftCon>a{
+  text-decoration: none;
+  background-color: white;
+  border-radius: 20px;
+  color: orange;
+  padding: 10px;
+  width: 80px;
 }
 .rightCon{
   padding: 40px;
